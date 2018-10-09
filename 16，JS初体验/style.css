@@ -1,0 +1,34 @@
+*{margin: 0;padding: 0;}
+a{
+    text-decoration: none;
+}
+kbd{
+    border:1px solid red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+}
+kbd > button{
+    position: absolute;
+    font-size: 1px;
+    right: 0;
+    bottom: 0;
+    display:none; //隐藏样式
+}
+kbd:hover> button{
+    display: inline-block;//样式鼠标移入显示
+}
+main{
+    text-align: center;
+}
+#mom{
+    display: inline-block;
+}
+#mom div:nth-child(2){
+    margin-left: 5px;
+}
+#mom div:nth-child(3){
+    margin-left: 10px;
+}
