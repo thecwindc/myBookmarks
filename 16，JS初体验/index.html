@@ -36,9 +36,9 @@
             'o':'opera.com',
         }
         
-        //取出localStorage中'u'这个桶里面的hash
+        //取出localStorage中'u'这个桶里面（本地存储）的hash
         var hashInLocalStorage = JSON.parse(localStorage.getItem('u') || 'null')
-        //如果发现桶里面不是空的，就覆盖这个hash
+        //如果发现桶里面不是空的，就覆盖JS里面的hash
         if(hashInLocalStorage){
             hash = hashInLocalStorage
         }
@@ -66,7 +66,7 @@
                         key = aa['target']['id'] 
                         aa2 = prompt('给洒家一个网址')
                         hash[key] = aa2
-                        localStorage.setItem('u', JSON.stringify(hash))//只要hash发生改变就把hash以字符串存储到localStorage里面的'u'这个桶里面
+                        localStorage.setItem('u', JSON.stringify(hash))//只要hash发生改变就把hash存储到localStorage里面的'u'这个桶里面
                         console.log(hash)
                     }
                     index2 = index2 + 1
